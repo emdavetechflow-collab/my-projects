@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./images/FES.svg>" alt="" />
+        <img src="./images/FES.svg>" class="logo" alt="" />
         <ul>
           <li><a href="#About">About</a></li>
           <li><a href="#home">Discord</a></li>
@@ -16,67 +17,84 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best Place to Learn Frontend</h1>
-          <p>
-            Go from absolute beginner to professional frontend developer with
-            Simplified process.
-          </p>
-          <button>Start Now</button>
+        <div class="row">
+          <div>
+            <h1>Best Place to Learn Frontend</h1>
+            <p class="subheader">
+              Go from absolute beginner to professional frontend developer with
+              Simplified process.
+            </p>
+            <button>Start Now</button>
+          </div>
+          <figure>
+            <img src="./images/laptop.png" alt="Home Page Image" />
+          </figure>
         </div>
-        <figure><img src="./images/laptop.png" alt="Home Page Image" /></figure>
       </header>
     </section>
     <main>
       <section id="About">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod. Lorem ipsum dolor sit amet consectetur
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod. Lorem ipsum dolor sit amet consectetur
-          </p>
+        <div class="row">
+          <div class="Section_Description">
+            <div class="Section_Description--wrapper">
+              <p class="Section_Description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              </p>
+              <p class="Section_Description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+          </div>
+          <figure class="about_img--wrapper">
+            <img src="./images/about.jpg" alt="About" />
+          </figure>
         </div>
-        <figure><img src="./images/about.jpg" alt="About" /></figure>
       </section>
       <section id="discord">
-        <img src="./images/discord.png" />
         <h2>Discord</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod. Lorem ipsum dolor sit amet consectetur
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod. Lorem ipsum dolor sit amet consectetur
-          </p>
+        <div class="row">
+          <div class="Section_Description">
+            <figure class="discord_img--wrapper">
+              <img src="./images/discord.png" alt="Discord" />
+            </figure>
+            <div class="Section_Description--wrapper">
+              <p class="Section_Description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              </p>
+              <p class="Section_Description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quod. Lorem ipsum dolor sit amet consectetur
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
           <span>email</span>
-          <input type="text" placeholder="emdavetechflow@gmail.com" />
+          <input type="email" placeholder="emdavetechflow@gmail.com" />
           <span>message</span>
           <textarea
             type="text"
-            placeholder="emdavetechflow@gmail.com"
+            placeholder="cool website, I like it"
           ></textarea>
-          <button>Submit</button>
+          <button>Contact Us</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="./images/FES.svg" alt="" />
-      <div>
-        <a href="#About">About</a>
-        <a href="#Discord">Discord</a>
-        <a href="#Contact">Contact</a>
-        <a href="">Courses</a>
+      <img class="footer_logo" src="./images/FES.svg" alt="" />
+
+      <div class="footer_links">
+        <a class="footer_link" href="#About">About</a>
+        <a class="footer_link" href="#Discord">Discord</a>
+        <a class="footer_link" href="#Contact">Contact</a>
+        <a class="footer_link" href="">Courses</a>
       </div>
       <p>Copyright frontend Simplified</p>
     </footer>
